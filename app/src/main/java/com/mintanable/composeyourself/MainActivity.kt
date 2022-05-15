@@ -17,13 +17,12 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.mintanable.composeyourself.ui.theme.MyApplicationTheme
+import com.mintanable.composeyourself.ui.theme.ComposeYourselfTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,7 +42,7 @@ class MainActivity : ComponentActivity() {
 //                MessageCard(Message("Android", "test"))
 //            }
 
-            MyApplicationTheme {
+            ComposeYourselfTheme {
                 Conversation(SampleData.conversationSample)
             }
         }
@@ -124,7 +123,7 @@ fun PreviewConversation() {
 
     var list = listOf<String>("tes1","test1","tes")
 
-    MyApplicationTheme {
+    ComposeYourselfTheme {
         Conversation(SampleData.conversationSample)
     }
 }
@@ -140,7 +139,7 @@ fun PreviewConversation() {
     name = "Light Mode")
 @Composable
 fun DefaultPreview() {
-    MyApplicationTheme {
+    ComposeYourselfTheme {
         MessageCard(Message("Android", "test"))
     }
 }

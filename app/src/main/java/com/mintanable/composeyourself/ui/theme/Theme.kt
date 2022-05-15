@@ -48,7 +48,7 @@ private val DarkColorPalette = darkColors(
 )
 
 @Composable
-fun MyApplicationTheme(
+fun ComposeYourselfTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
