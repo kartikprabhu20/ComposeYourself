@@ -61,4 +61,16 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
     implementation 'io.coil-kt:coil-compose:1.4.0'
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$rootProject.compose_version"
+
+    // Testing dependencies
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
+
+    // Compose testing dependencies
+    androidTestImplementation "androidx.compose.ui:ui-test:$rootProject.composeVersion"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$rootProject.composeVersion"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$rootProject.composeVersion"
 }
